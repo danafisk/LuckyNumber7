@@ -12,13 +12,13 @@ int main()
 
 
   //when they guess correctly (7), display:
-  cout<<"YES! Lucky number 7!\n";
+  if(guess==7){cout<<"YES! Lucky number 7!\n";}
 
   //when they guess just off by one (either 6 or 8), display:
-  cout<<"Oh, so close!\n";
+  if(guess==6||guess==8){cout<<"Oh, so close!\n";}
 
   //when they guess any other number, display:
-  cout<<"Waaay off, sorry.\n";
+  if(guess==1||guess==2||guess==3||guess==4||guess==5||guess==9||guess==10){cout<<"Waaay off, sorry.\n";}
 
   return 0;
 }
